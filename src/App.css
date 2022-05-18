@@ -1,0 +1,76 @@
+html {
+  background-color: #fff1e6;
+  min-width: 100%;
+  color: transparent;
+  text-shadow: 0 0 0 #000000;
+  overflow-x: hidden;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: linear-gradient(to top right, #0f0f0fd9, #8c072196),
+    url('./assets/images/background.jpg');
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.App {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-5px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bd1616;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8f0513;
+}

@@ -1,0 +1,144 @@
+.container_intro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_image_pixel {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  left: 63%;
+  animation: float 3s ease-in-out infinite;
+  z-index: 99;
+}
+
+.image_pixel {
+  background-image: url("../../assets/images/avatarPixel.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: rotate(10deg);
+}
+
+.lips {
+  width: 13%;
+  height: 5%;
+  position: relative;
+  background-color: transparent;
+  top: 69%;
+  left: 44%;
+  animation: speaking 250ms 12;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+
+.command {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #7f0a0a78;
+  width: 60%;
+  height: 40%;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  font-family: "VT323", monospace;
+  font-size: 24px;
+  z-index: 9;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 850px) {
+  .command {
+    width: 90%;
+    height: 30%;
+    font-size: 14px;
+  }
+
+  .container_image_pixel {
+    width: 170px;
+    height: 170px;
+    top: 20%;
+    left: 50%;
+  }
+}
+
+.text-top {
+  width: fit-content;
+  margin-left: 20px;
+}
+
+.line {
+  position: relative;
+  top: 50%;
+  width: 6.5em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-100%);
+}
+
+.anim-typewriter {
+  animation: typewriter 2s steps(15) 1s 1 normal both,
+    blinkTextCursor 700ms steps(15) infinite normal;
+}
+
+.anim-typewriter2 {
+  animation: typewriter2 3s steps(20) 1s 1 normal both,
+    blinkTextCursor 700ms steps(15) infinite normal;
+}
+
+@keyframes speaking {
+
+  0%,
+  50% {
+    background-color: transparent;
+  }
+
+  51%,
+  100% {
+    background-color: #370617;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 6.7em;
+  }
+}
+
+@keyframes typewriter2 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 12em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}

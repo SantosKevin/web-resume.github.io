@@ -1,0 +1,27 @@
+.titles {
+  display: flex;
+  justify-content: center;
+  font-family: "Inconsolata", monospace;
+  margin-left: 10%;
+}
+
+.title {
+  z-index: 999;
+  color: white;
+}
+
+.me {
+  background-image: url("../../../assets/images//avatarPixel.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 13px;
+  width: 14%;
+  height: auto;
+  transform: rotate(10deg);
+}
+
+@media (max-width: 750px) {
+  .title {
+    font-size: 20px;
+  }
+}

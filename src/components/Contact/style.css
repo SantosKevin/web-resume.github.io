@@ -1,0 +1,131 @@
+.container_form {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+}
+
+.names_contact {
+  z-index: 5;
+  width: 40%;
+  min-height: 370px;
+  background-color: #7f0a0a78;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.send_email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 60%;
+  z-index: 5;
+}
+
+.inputBox {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.inputBox label {
+  width: 30%;
+}
+
+.input {
+  margin: .8em;
+  border-radius: 5px;
+  border-color: transparent;
+  box-shadow: 1px 2px 3px #999;
+  height: 1.5em;
+  width: 60%;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 100px;
+}
+
+.message {
+  height: 80px;
+  resize: none;
+}
+
+.button_submit_contact {
+  width: fit-content;
+  font-family: "VT323", monospace;
+  font-size: 24px;
+  letter-spacing: 10px;
+  padding-left: 17px;
+  background: transparent;
+  color: #e0afa0;
+  border: 4px solid #e0afa0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.button_submit_contact:hover {
+  transform: translateY(-5px);
+  filter: invert(100%);
+}
+
+@media (max-width: 750px) {
+  .names_contact {
+    z-index: 5;
+    width: 80%;
+  }
+
+  .send_email {
+    width: 70%;
+    justify-content: flex-start;
+    margin: 0.5em;
+    height: fit-content;
+  }
+
+  .input {
+    margin: 0.5em;
+  }
+
+  .container_form h1 {
+    font-size: 18px;
+  }
+
+  .message {
+    height: 35%;
+  }
+}
+
+.btn_start2 {
+  font-family: "VT323", monospace;
+  font-size: 30px;
+  letter-spacing: 4px;
+  background: transparent;
+  color: #e6e6e6;
+  border: 5px solid #e6e6e6;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .7s;
+  z-index: 99;
+}
+
+.btn_start2:hover {
+  background-color: #7f0a0a78;
+}
+
+.btn_start2:hover {
+  transform: scale(1.1);
+}

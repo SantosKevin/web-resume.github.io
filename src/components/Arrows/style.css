@@ -1,0 +1,60 @@
+.arrowsDown {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 80%;
+  left: 24%;
+
+}
+
+.arrowsUp {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 4%;
+  left: 25%;
+}
+
+.arrow {
+  width: 6em;
+  height: auto;
+  animation: float 2.5s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.presskey {
+  transform: translateY(20px);
+}
+
+.green {
+  height: 100vh;
+  width: 100%;
+  background-color: green;
+}
+
+@media (max-width: 750px) {
+  .arrowsDown {
+    display: none;
+  }
+
+  .arrowsUp {
+    display: none;
+  }
+}
+
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}

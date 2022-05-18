@@ -1,0 +1,24 @@
+.button-start {
+  position: absolute;
+  margin-top: 60px;
+  left: calc(50% - 130px);
+  font-family: "VT323", monospace;
+  font-size: 30px;
+  letter-spacing: 4px;
+  background: transparent;
+  color: #e6e6e6;
+  border: 5px solid #e6e6e6;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .7s;
+}
+
+
+
+.button-start:hover {
+  background-color: #7f0a0a78;
+}
+
+.button-start:hover {
+  transform: scale(1.1);
+}

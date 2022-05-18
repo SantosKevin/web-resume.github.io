@@ -1,0 +1,45 @@
+.container_footer {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: fit-content;
+  bottom: 0;
+  left: 0;
+  background-color: #7f0a0a78;
+  display: flex;
+  justify-content: space-between;
+  color: white
+}
+
+.social_medias {
+  z-index: 10;
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: flex-start;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.icon_Cv {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.text_footer {
+  font-family: "Inconsolata", monospace;
+  margin-right: 1em;
+  width: 19.5%;
+}
+
+@media (max-width: 750px) {
+  .social_medias {
+    width: 25%;
+  }
+
+  .text_footer {
+    width: fit-content;
+  }
+}
