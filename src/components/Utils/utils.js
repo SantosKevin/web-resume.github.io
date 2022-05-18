@@ -18,7 +18,7 @@ export const projects = [
       "This is a dashboard to manage the access to the client services, here you have  different sections, for example, data analytics, projects and applications creation, role assignment and invitations to the organization, this screenshot is from the register section.",
     textSpanish:
       "Este es un tablero para administrar el acceso a los servicios del cliente, aquí tiene diferentes secciones, por ejemplo, análisis de datos, creación de proyectos y aplicaciones, asignación de roles e invitaciones a la organización, esta captura de pantalla es de la sección de registro.",
-    id: "https://entretiempo-staging.elpotrero.org/ ",
+    id: "",
     animation: "fade-right",
   },
   {
@@ -27,7 +27,7 @@ export const projects = [
       "This is the new Openix website, it is a multi-language website with general information about the company, events, pictures, videos and so on. This was developed with React, this screenshot is from the Home section.",
     textSpanish:
       "Este es el nuevo sitio web de Openix, es un sitio web en varios idiomas con información general sobre la empresa, eventos, fotos, videos, etc. Esto fue desarrollado con React, esta captura de pantalla es de la sección Inicio.",
-    id: "https://github.com/Lunia98/iGiftyouE-commerce",
+    id: "https://openix.com.ar",
     animation: "fade-left",
   },
 
@@ -37,7 +37,7 @@ export const projects = [
       "This is another dashboard, here you can access to the dashboard with two roles, a company and an admin role, with a company account you can handle your advertisements, create them with sounds or images, with an admin account you can approve or disapprove the advertisements and see statistics about them. Here is a screenshot of an Ad Creation.",
     textSpanish:
       "Este es otro tablero, aquí puede acceder al tablero con dos roles, una empresa y un rol de administrador, con una cuenta de empresa puede manejar sus anuncios, crearlos con sonidos o imágenes, con una cuenta de administrador puede aprobar o desaprobar el anuncios y ver estadísticas sobre ellos. Aquí hay una captura de pantalla de una creación de anuncios.",
-    id: "https://lunia98.github.io/plants-website/",
+    id: "",
     animation: "fade-right",
   },
 
@@ -47,7 +47,7 @@ export const projects = [
       "And this is a small project that I made with Angular to show my frontend skills before start to search for a job.",
     textSpanish:
       "Y este es un pequeño proyecto que hice con Angular para mostrar mis habilidades de frontend antes de comenzar a buscar trabajo.",
-    id: "https://github.com/Lunia98/resume-web ",
+    id: "https://web-project-example.herokuapp.com/home",
     animation: "fade-left",
   },
 ];

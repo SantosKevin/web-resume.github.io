@@ -10,19 +10,13 @@ import { Animated } from "react-animated-css";
 
 const socialMedias = [
   {
-    href: "https://www.linkedin.com/in/lunia98/",
-    name: "",
-    icon: <LinkedInIcon fontSize="default" style={{ color: "white" }} />,
-    dur: 300,
-  },
-  {
-    href: "https://www.linkedin.com/in/lunia98/",
+    href: "https://github.com/SantosKevin",
     name: "",
     icon: <GitHubIcon fontSize="default" style={{ color: "white" }} />,
     dur: 500,
   },
   {
-    href: "https://www.linkedin.com/in/lunia98/",
+    href: "https://docs.google.com/document/d/1gX_9a-qcBoENmZtPjjaZF3Em6nzWKpGziVpNiN4EYRA/edit?usp=sharing",
     name: "cv",
     icon: <GetAppIcon fontSize="default" style={{ color: "white" }} />,
     dur: 700,

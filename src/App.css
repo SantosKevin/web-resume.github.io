@@ -23,11 +23,11 @@ html::before {
   right: 0px;
   left: 0px;
   bottom: 0px;
-  background: linear-gradient(to top right, #0f0f0fd9, #8c072196),
+  background: linear-gradient(to top right, #0f0f0ff7, #680216b5),
     url('./assets/images/background.jpg');
   background-size: cover;
   background-position: top center;
-  opacity: 0.9;
+  opacity: .9;
   z-index: 0;
 }
 

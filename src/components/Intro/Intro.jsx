@@ -69,7 +69,7 @@ export default function Intro({ setPos }) {
           <p className="text-top">{text[1]}</p>
         </Animated>
         <div onClick={handleStart} style={{ zIndex: 5 }}>
-          <Link to="/resume-web/home">
+          <Link to="/web-resume.github.io/home">
             <ButtonStart />
           </Link>
         </div>

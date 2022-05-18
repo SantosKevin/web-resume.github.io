@@ -75,34 +75,40 @@ export default function Contact() {
           : "Oops! The email is not correct!",
       });
     }
-    emailjs
-      .sendForm(
-        "service_hrwiw7l",
-        "template_rfeqytk",
-        e.target,
-        "user_WGttNJoyKgqWfe5xLLDpd"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          swal({
-            icon: "success",
-            text: lenguage
-              ? "Gracias por contactarte conmigo!"
-              : "Thanks for contacting me!",
-          });
-          setInput({
-            name: "",
-            lastName: "",
-            email: "",
-            subject: "",
-            message: "",
-          });
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    return swal({
+      icon: "info",
+      text: lenguage
+        ? "El contacto no funciona por el momento :("
+        : "This form does not work for the moment :(",
+    });
+    // emailjs
+    //   .sendForm(
+    //     "service_hrwiw7l",
+    //     "template_rfeqytk",
+    //     e.target,
+    //     "user_WGttNJoyKgqWfe5xLLDpd"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       swal({
+    //         icon: "success",
+    //         text: lenguage
+    //           ? "Gracias por contactarte conmigo!"
+    //           : "Thanks for contacting me!",
+    //       });
+    //       setInput({
+    //         name: "",
+    //         lastName: "",
+    //         email: "",
+    //         subject: "",
+    //         message: "",
+    //       });
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   }
   const handleInputChange = (e) => {
     setInput({ ...input, [e.target.name]: e.target.value });

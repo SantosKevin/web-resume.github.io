@@ -33,11 +33,11 @@ function App() {
 
   function posLocation(type) {
     return {
-      "/resume-web/": 0,
-      "/resume-web/home": 1,
-      "/resume-web/projects": 2,
-      "/resume-web/skills": 3,
-      "/resume-web/contact": 4,
+      "/web-resume.github.io/": 0,
+      "/web-resume.github.io/home": 1,
+      "/web-resume.github.io/projects": 2,
+      "/web-resume.github.io/skills": 3,
+      "/web-resume.github.io/contact": 4,
     }[type];
   }
 
@@ -50,17 +50,21 @@ function App() {
   const [up, setUp] = useState(false);
 
   return (
-    <Route path="/resume-web/">
+    <Route path="/web-resume.github.io/">
       <Route
         exact
-        path="/resume-web/"
+        path="/web-resume.github.io/"
         render={() => <Intro setPos={setPos} />}
       />
-      <Route exact path="/resume-web/home" render={() => <Home pos={pos} />} />
-      <Route exact path="/resume-web/projects" component={Projects} />
       <Route
         exact
-        path="/resume-web/skills"
+        path="/web-resume.github.io/home"
+        render={() => <Home pos={pos} />}
+      />
+      <Route exact path="/web-resume.github.io/projects" component={Projects} />
+      <Route
+        exact
+        path="/web-resume.github.io/skills"
         render={() => (
           <Skills
             countIcon={countIcon}
@@ -70,7 +74,7 @@ function App() {
           />
         )}
       />
-      <Route exact path="/resume-web/contact" component={Contact} />
+      <Route exact path="/web-resume.github.io/contact" component={Contact} />
       <Footer />
       {size.width < 750 ? (
         <ButtonMobile
