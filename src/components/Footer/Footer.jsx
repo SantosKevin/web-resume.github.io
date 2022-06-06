@@ -1,12 +1,11 @@
-import React from "react";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GetAppIcon from "@material-ui/icons/GetApp";
-import Lenguage from "../Lenguage/Lenguage";
-
-import "./style.css";
-import { useSelector } from "react-redux";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import React from "react";
 import { Animated } from "react-animated-css";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import Lenguage from "../Lenguage/Lenguage";
+import "./style.css";
 
 const socialMedias = [
   {
@@ -16,7 +15,7 @@ const socialMedias = [
     dur: 500,
   },
   {
-    href: "https://docs.google.com/document/d/1gX_9a-qcBoENmZtPjjaZF3Em6nzWKpGziVpNiN4EYRA/edit?usp=sharing",
+    href: "https://drive.google.com/file/d/1RuUFqaH67beD7JRr6rCD_2ecHWra1Ykb/view",
     name: "cv",
     icon: <GetAppIcon fontSize="default" style={{ color: "white" }} />,
     dur: 700,
@@ -35,16 +34,17 @@ export default function Footer() {
         >
           <div>Follow me here ;)</div>
         </Animated>
-        {socialMedias.map((n) => (
+        {socialMedias.map((n, index) => (
           <Animated
             animationIn="bounceInLeft"
             animationOut="fadeOut"
             isVisible={true}
             animationInDelay={n.dur}
+            key={index}
           >
             <a
               rel="noreferrer"
-              target="_BLANK"
+              target={"_blank"}
               href={n.href}
               className={n.name && "icon_Cv"}
             >

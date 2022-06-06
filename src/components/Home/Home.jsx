@@ -20,14 +20,14 @@ export default function Home({ pos }) {
 
           <h2>
             {lenguage
-              ? "Dije esto en febrero del 2021: Soy desarrolladora web FullStack.  ¡Me encuentro buscando un trabajo que me desafíe día a día! Constantemente estoy mejorando mis conocimientos, soy proactiva y me encanta trabajar en equipo."
+              ? "Soy Kevin Santos. Tengo 21 años. Soy un desarrollador web. Llevo 1 año más o menos trabajando en una empresa de software llamada Openix. Participé en algunos proyectos interesantes donde aprendí muchas cosas."
               : "I'm Kevin Santos. I’m 21 years old. I'm a web developer. I have been working at a software company called Openix for 1 year more or less. I participated in some interesting projects where I learnt many things."}
           </h2>
           <br />
           <h2>
             {lenguage
-              ? "Ahora: Trabajo como Software Engineer en Auth0! Muchas gracias a todos por el apoyo! :)"
-              : "I consider myself an autodidact and a reliable person. People can count on me. I like to help other people. I think it is a very helpful way to become a better developer, I like to learn new things. I like challenges. I also like to be punctual with schedules, and complete my tasks in the estimated time."}
+              ? "Me considero una persona autodidacta y confiable. La gente puede contar conmigo. Me gusta ayudar a otras personas. Pienso que es una forma útil de volverse un mejor desarrollador, disfruto aprender cosas nuevas. Me encantan los retos. Me gusta ser puntual con los tareas y completarlas en el tiempo estimado."
+              : "I consider myself an autodidact and a reliable person. People can count on me. I like to help other people. I think it is a very helpful way to become a better developer, I enjoy to learn new things. I love challenges. I also like to be punctual with schedules, and complete my tasks in the estimated time."}
           </h2>
 
           {size.width < 750 ? (

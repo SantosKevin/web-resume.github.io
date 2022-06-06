@@ -1,7 +1,7 @@
 .button-start {
   position: absolute;
   margin-top: 60px;
-  left: calc(50% - 130px);
+  left: calc(50% - 100px);
   font-family: "VT323", monospace;
   font-size: 30px;
   letter-spacing: 4px;

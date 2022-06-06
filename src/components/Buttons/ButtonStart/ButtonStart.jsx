@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import "./style.css";
 
 export default function ButtonStart() {
   const [state, setState] = useState(false);
+  const lenguage = useSelector((state) => state.lenguage);
   useEffect(() => {
     //   setTimeout(() => {
     //     setState(true);
@@ -19,7 +21,9 @@ export default function ButtonStart() {
   return (
     state && (
       <div>
-        <button className="button-start">YES, I WANT TO!</button>
+        <button className="button-start">
+          {lenguage ? "SI QUIERO!" : "YES, I DO!"}
+        </button>
       </div>
     )
   );
